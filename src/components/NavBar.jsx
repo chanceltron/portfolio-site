@@ -15,8 +15,8 @@ export default function NavBar() {
         </div>
         <div id='navLinks'>
           <ul className='flex gap-4'>
-            {links.map((link) => (
-              <a href=''>
+            {links.map((link, index) => (
+              <a key={index} href=''>
                 <li>{link.content}</li>
               </a>
             ))}
