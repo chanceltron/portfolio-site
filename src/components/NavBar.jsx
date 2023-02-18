@@ -1,20 +1,21 @@
 import React from 'react';
+import { LudwickLogo } from '../assets/LudwickLogo';
 
 export default function NavBar() {
   const links = [
-    { content: 'About' },
-    { content: 'Projects' },
-    { content: 'Contact' },
+    { content: 'about' },
+    { content: 'projects' },
+    { content: 'contact' },
   ];
 
   return (
-    <div className='bg-stone-200'>
-      <div className='bg-transparent text-stone-700 font-semibold px-3 py-2 flex justify-between align-middle'>
+    <div className='bg-stone-200 font-Fira+Sans'>
+      <div className='bg-transparent text-stone-700 font-semibold px-8 pt-2 flex justify-between items-center'>
         <div id='logo'>
-          <h1 className=''>Ludwick</h1>
+          <LudwickLogo className='w-32'></LudwickLogo>
         </div>
         <div id='navLinks'>
-          <ul className='flex gap-4'>
+          <ul className='flex gap-12 font-normal text-xl'>
             {links.map((link, index) => (
               <a key={index} href=''>
                 <li>{link.content}</li>

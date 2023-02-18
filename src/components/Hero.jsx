@@ -2,17 +2,19 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <div className='flex justify-center'>
-      <div className='bg-stone-200 px-20 h-full m-0 self-center'>
-        <h1 className='text-5xl font-thin'>From System Admin</h1>
+    <div className='flex justify-center px-20'>
+      <div className='bg-stone-200 h-full m-0 self-center max-w-xl'>
+        <h1 className='text-5xl font-thin mb-1'>From System Admin</h1>
         <h1 className='text-5xl font-bold'>to Web Developer</h1>
-        <h2 className='text-2xl mt-8'>
-          Bringing technical expertise to the world of web design.
-        </h2>
+        <p className='text-lg font-extralight mt-8'>
+          I have a unique background in system administration and video
+          engineering. With strong problem-solving skills and a proven track
+          record of delivering results in high-pressure environments.
+        </p>
       </div>
-      <div>
+      <div className=''>
         <img
-          src='src/assets/Chance_Ludwick-081-full.png'
+          src='src/assets/Chance_Ludwick-081-full-bg.png'
           alt='Chance Ludwick profile picture'
           className='w-96'
         />
