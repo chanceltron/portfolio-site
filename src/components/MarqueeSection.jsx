@@ -12,10 +12,10 @@ const images = [
 
 export function MarqueeSection() {
   return (
-    <div className='flex flex-col'>
-      <h3 className='italic text-lg text-right mr-32 font-semibold py-6'>
+    <div className='flex flex-col items-center justify-center py-4'>
+      {/* <h3 className='italic text-lg text-right mr-32 font-semibold py-6'>
         "A different language is a different vision of life."
-      </h3>
+      </h3> */}
       <Marquee speed='30' className='my-6'>
         <div className='flex justify-around w-full'>
           {images.map((img, index) => (

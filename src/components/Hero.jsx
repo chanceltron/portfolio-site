@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Hero() {
+export function Hero() {
   return (
-    <div className='flex justify-center px-20'>
-      <div className='bg-stone-200 h-full m-0 self-center max-w-xl'>
+    <section id='hero' className='flex justify-center px-20'>
+      <div className='bg-stone-200 h-full m-0 self-center max-w-lg text-stone-800'>
         <h1 className='text-5xl font-thin mb-1'>From System Admin</h1>
         <h1 className='text-5xl font-bold'>to Web Developer</h1>
         <p className='text-lg font-extralight mt-8'>
@@ -16,9 +16,9 @@ export default function Hero() {
         <img
           src='src/assets/Chance_Ludwick-081-full-bg.png'
           alt='Chance Ludwick profile picture'
-          className='w-96'
+          className='w-[30rem]'
         />
       </div>
-    </div>
+    </section>
   );
 }
