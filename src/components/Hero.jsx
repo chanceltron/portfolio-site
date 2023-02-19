@@ -14,7 +14,7 @@ export function Hero() {
       </div>
       <div className=''>
         <img
-          src='/static/images/Chance_Ludwick-081-full-bg.png'
+          src='/static/images/Chance_Ludwick-081-full-bg-shrunk.png'
           alt='Chance Ludwick profile picture'
           className='w-[30rem]'
         />
