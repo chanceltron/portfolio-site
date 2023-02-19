@@ -1,4 +1,5 @@
 import Marquee from 'react-fast-marquee';
+import image from '../../public/images/html.svg';
 
 const images = [
   { src: 'html.svg' },
@@ -22,7 +23,7 @@ export function MarqueeSection() {
             <img
               key={index}
               className='w-28 ml-6'
-              src={`\\src\\assets\\${img.src}`}
+              src={`/static/images/${img.src}`}
             />
           ))}
         </div>
