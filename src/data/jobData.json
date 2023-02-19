@@ -1,0 +1,34 @@
+[
+  {
+    "id": "army",
+    "name": "United States Army",
+    "time": "2013 - 2017",
+    "hook": "IT professional with US Army experience, skilled in high-pressure scenarios.",
+    "description": "Experienced IT professional with a demonstrated history of working in the US Army. Proficient in researching and evaluating new hardware and software technologies to enhance the efficiency and capability of new and existing systems. Skilled in troubleshooting network connectivity issues and monitoring and diagnosing devices for problems. Capable of ensuring the smooth execution of information technology operations as a lead technician utilizing administrative rights. Proficient in forwarding unresolved problems to the appropriate level and department using ticketing systems.",
+    "bullets": ["", "", "", "", "", ""]
+  },
+  {
+    "id": "rush",
+    "name": "Rush Personnel Services",
+    "time": "2017 - 2018",
+    "hook": "Experienced system administrator skilled in network engineering and administration.",
+    "description": "Experienced system administrator with a track record of collaborating with network engineering, business application, and system administration functions to implement local and virtual networks that meet corporate objectives and use industry best practices. Skilled in creating new employee accounts, setting up physical machines, managing user permissions, access rights, and storage allocations in accordance with department policies and procedures. Adept at identifying and troubleshooting complex issues related to hardware and software on servers and workstations. Experienced in enabling companies to use digital signatures and create a high level of information integrity.",
+    "bullets": ["", "", "", "", "", ""]
+  },
+  {
+    "id": "prx",
+    "name": "PioneerRx Pharmacy Software",
+    "time": "2018 - 2019",
+    "hook": "Remote IT Hardware Specialist with expertise in troubleshooting and support.",
+    "description": "Experienced and detail-oriented Remote IT Support - Hardware Specialist with a strong background in troubleshooting and supporting a variety of applications and hardware. Proficient in Windows operating system support, remote support, routers, networking, and hardware. Possesses strong LAN/WAN/Print Server troubleshooting skills and the ability to install operating systems, drivers, and applications. Excellent phone communication skills, with a professional and confident speaking tone. Skilled in efficiently managing time and multitasking. A quick learner, dedicated to providing exceptional customer service and able to adapt to new concepts.",
+    "bullets": ["", "", "", "", "", ""]
+  },
+  {
+    "id": "sla",
+    "name": "Superior Livestock Auction",
+    "time": "2019 - Present",
+    "hook": "Systems Administrator and Video Engineer with expertise in live auctions.",
+    "description": "As a Systems Administrator and Video Engineer, I operate in a fast-paced and dynamic environment, providing system support for live, ultra-low latency broadcasts that sell livestock over online bidding platforms. I collaborate closely with developers to stage environments that cater to the high-energy and demanding process of ensuring a seamless customer experience when purchasing online. Innovation and testing new technologies are always at the forefront of my responsibilities. In addition, I maintain the daily operations of video rendering servers, ceph storage clusters, and broadcast equipment such as Tricaster and vMix, utilizing a range of analog and IP protocols, including NDI and Dante. I also work with developers to integrate graphics applications using PubNub commands and information. Throughout the year, I travel to remote sale sites across the United States, implementing solutions that guarantee smooth auctions from these locations. The stakes are high, as the auctions sell an entire year's livelihood for ranchers in a matter of minutes. Therefore, the meticulous setup that I provide is critical to maintaining the integrity of these auctions.",
+    "bullets": ["", "", "", "", "", ""]
+  }
+]

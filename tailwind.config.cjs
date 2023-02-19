@@ -15,9 +15,14 @@ module.exports = {
           '0%, 49%, 100%': { opacity: 1 },
           '50%, 99%': { opacity: 0 },
         },
+        'fade-in': {
+          '0%': { opacity: 0, scale: 0 },
+          '100%': { opacity: 1, scale: 1 },
+        },
       },
       animation: {
         blink: 'blink 1s linear infinite',
+        'fade-in': 'fade-in 0.5s ease-in-out',
       },
     },
   },

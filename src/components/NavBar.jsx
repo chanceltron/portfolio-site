@@ -2,8 +2,8 @@ import { LudwickLogo } from '../assets/LudwickLogo';
 
 export function NavBar() {
   const links = [
-    { content: 'about' },
     { content: 'projects' },
+    { content: 'about' },
     { content: 'contact' },
   ];
 
