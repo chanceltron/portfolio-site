@@ -3,7 +3,7 @@ import { HiInformationCircle } from 'react-icons/hi';
 
 export function AlertMessage() {
   return (
-    <div className='fixed top-6 w-full pointer-events-none'>
+    <div className='absolute top-3 w-full pointer-events-none'>
       <Alert
         color='failure'
         icon={HiInformationCircle}

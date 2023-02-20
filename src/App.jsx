@@ -7,10 +7,8 @@ import { AlertMessage } from './components/AlertMessage';
 
 export default function App() {
   return (
-    <div className='h-screen relative w-full'>
-      <div className='fixed top-6'>
-        <AlertMessage />
-      </div>
+    <div className='h-screen w-full'>
+      <AlertMessage />
       <div className='bg-stone-200'>
         <NavBar></NavBar>
         <Hero />
