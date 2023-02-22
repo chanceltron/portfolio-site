@@ -4,6 +4,7 @@ import MarqueeSection from './components/MarqueeSection';
 import { JobModal } from './components/JobModal';
 import { NavBar } from './components/NavBar';
 import { AlertMessage } from './components/AlertMessage';
+import Projects from './components/Projects';
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       </div>
       <MarqueeSection></MarqueeSection>
       <div className='bg-stone-200'>
-        <div className='h-24'></div>
+        <Projects></Projects>
       </div>
       <Experience />
       <JobModal></JobModal>
