@@ -1,4 +1,4 @@
-import { LudwickLogo } from '../assets/LudwickLogo';
+import { Images } from '../assets/images';
 import Logo from '../assets/LudwickLogo-animated.svg';
 
 export function NavBar() {
@@ -12,7 +12,7 @@ export function NavBar() {
     <div className='bg-stone-200 font-fira font-light'>
       <div className='bg-transparent text-stone-700 font-semibold px-8 pt-2 flex justify-between items-center'>
         <div id='logo'>
-          <object data={Logo} className='w-32' alt='' />
+          <object data={Images.LudwickLogo} className='w-32' alt='' />
         </div>
         <div id='navLinks'>
           <ul className='flex gap-12 font-normal text-xl'>

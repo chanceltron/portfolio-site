@@ -1,6 +1,6 @@
 import Experience from './components/Experience';
 import { Hero } from './components/Hero';
-import { MarqueeSection } from './components/MarqueeSection';
+import MarqueeSection from './components/MarqueeSection';
 import { JobModal } from './components/JobModal';
 import { NavBar } from './components/NavBar';
 import { AlertMessage } from './components/AlertMessage';

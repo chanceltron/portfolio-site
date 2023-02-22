@@ -1,4 +1,5 @@
 import React from 'react';
+import { Images } from '../assets/images';
 
 export function Hero() {
   return (
@@ -14,8 +15,8 @@ export function Hero() {
       </div>
       <div className=''>
         <img
-          src='/static/images/Chance_Ludwick-081-full-bg-shrunk.png'
-          alt='Chance Ludwick profile picture'
+          src={Images.HeroImage}
+          alt='Chance Ludwick hero image'
           className='w-[30rem]'
         />
       </div>
