@@ -1,5 +1,10 @@
 import LudwickLogo from './LudwickLogo-animated.svg';
 import HeroImage from './hero-image.png';
+import DebtCalc from './debt-calculator-edited.png';
+import Folio from './folio-edited.png';
+import Battleship from './node-battleship-edited.png';
+import SaaS from './saas-website-edited.png';
+import codeCommerce from './codeCommerce-edited.png';
 import Bootstrap from './bootstrap.svg';
 import CSS from './css.svg';
 import HTML from './html.svg';
@@ -7,10 +12,6 @@ import JavaScript from './javascript.svg';
 import React from './react.svg';
 import Tailwind from './tailwind.svg';
 import Node from './node.svg';
-import DebtCalc from './debt-calculator-edited.png';
-import Folio from './folio-edited.png';
-import Battleship from './node-battleship-edited.png';
-import SaaS from './saas-website-edited.png';
 
 export const Images = {
   LudwickLogo,
@@ -19,6 +20,7 @@ export const Images = {
   Folio,
   Battleship,
   SaaS,
+  codeCommerce,
 };
 
 export const Icons = {
@@ -33,38 +35,36 @@ export const Icons = {
 
 export const Badges = {
   html: {
-    icon: 'html',
-    bg: 'bg-[#f17844]',
-    text: 'text-[#ffffff]',
+    label: 'html',
+    styles: 'bg-orange-400 group-hover:bg-orange-400 text-white',
   },
   css: {
-    icon: 'css',
-    bg: 'bg-[#2965f1]',
-    text: 'text-[#ffffff]',
+    label: 'css',
+    styles: 'bg-blue-600 text-white',
+    link: '',
   },
   javascript: {
-    icon: 'javascript',
-    bg: 'bg-[#f0db4f]',
-    text: 'text-[#000000]',
+    label: 'javascript',
+    styles: 'bg-yellow-200 group-hover:bg-yellow-200 text-stone-800',
+  },
+  typescript: {
+    label: 'typescript',
+    styles: 'bg-blue-600 group-hover:bg-blue-600 text-white',
   },
   react: {
-    icon: 'react',
-    bg: 'bg-[#61dafb]',
-    text: 'text-[#000000]',
+    label: 'react',
+    styles: 'bg-cyan-400 group-hover:bg-cyan-400 text-white',
   },
   node: {
-    icon: 'node',
-    bg: 'bg-[#339933]',
-    text: 'text-[#ffffff]',
+    label: 'node',
+    styles: 'bg-lime-400 group-hover:bg-lime-400 text-stone-800',
   },
   tailwind: {
     icon: 'tailwind',
-    bg: 'bg-[#38b2ac]',
-    text: 'text-[#ffffff]',
+    styles: 'bg-emerald-400 hover:bg-emerald-400 text-white',
   },
   bootstrap: {
     icon: 'bootstrap',
-    bg: 'bg-[#7952b3]',
-    text: 'text-[#ffffff]',
+    styles: 'bg-purple-500 hover:bg-purple-500 text-white',
   },
 };

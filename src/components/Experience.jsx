@@ -8,7 +8,7 @@ import jobData from '../data/jobData.json';
 // TODO - write useModal hook
 // TODO - implement useModal hook for each job button
 
-export default function Experience() {
+export function Experience() {
   const [selectedJob, setSelectedJob] = useState(null);
   const [openModal, setOpenModal] = useState(false);
 
@@ -28,7 +28,9 @@ export default function Experience() {
         <Timeline.Item key={job.id}>
           <Timeline.Point icon={HiCalendar} />
           <Timeline.Content>
-            <Timeline.Title>{job.time}</Timeline.Title>
+            <Timeline.Title className='font-extrabold'>
+              {job.startDate}
+            </Timeline.Title>
             <Timeline.Title>{job.name}</Timeline.Title>
             <Timeline.Body>{job.hook}</Timeline.Body>
             <Button color='gray' onClick={() => handleLearnMoreClick(job.id)}>

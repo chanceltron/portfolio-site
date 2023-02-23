@@ -1,9 +1,9 @@
 import Marquee from 'react-fast-marquee';
 import { Icons } from '../assets/images';
 
-export default function MarqueeSection() {
+export function MarqueeSection() {
   return (
-    <div className='flex flex-col items-center justify-center py-4'>
+    <div className='items-center justify-center'>
       <Marquee speed='30' className='my-6'>
         <div className='flex justify-around w-full'>
           {Object.values(Icons).map((img, index) => (

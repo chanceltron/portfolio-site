@@ -17,7 +17,7 @@ export function Hero() {
         <img
           src={Images.HeroImage}
           alt='Chance Ludwick hero image'
-          className='w-[30rem]'
+          className=''
         />
       </div>
     </section>
