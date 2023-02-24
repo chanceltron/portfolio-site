@@ -2,16 +2,50 @@ import { Badge, Button, Card } from 'flowbite-react';
 import { Images } from '../assets/images';
 import { FaGithub } from 'react-icons/fa';
 import { HiArrowUpRight } from 'react-icons/hi2';
-import { Badges } from '../assets/images';
-const { html, css, javascript, typescript, react, node, tailwind, bootstrap } =
-  Badges;
+
+const badges = {
+  html: {
+    label: 'html',
+    styles: 'bg-orange-400 text-white',
+  },
+  css: {
+    label: 'css',
+    styles: 'bg-blue-600 text-white',
+    link: '',
+  },
+  javascript: {
+    label: 'javascript',
+    styles: 'bg-yellow-200 text-stone-800',
+  },
+  typescript: {
+    label: 'typescript',
+    styles: 'bg-blue-600 text-white',
+  },
+  react: {
+    label: 'react',
+    styles: 'bg-cyan-400 text-white',
+  },
+  node: {
+    label: 'node',
+    styles: 'bg-lime-400 text-stone-800',
+  },
+  tailwind: {
+    icon: 'tailwind',
+    styles: 'bg-emerald-400 text-white',
+  },
+  bootstrap: {
+    icon: 'bootstrap',
+    styles: 'bg-purple-500 text-white',
+  },
+};
+const { html, css, javascript, typescript, react, node } = badges;
 
 const cardData = [
   {
     imgSrc: `${Images.Folio}`,
     title: 'folio',
     badges: [html, css, javascript],
-    links: {
+    link: {
       live: 'https://chanceltron.github.io/folio-website/',
       github: 'https://github.com/chanceltron/folio-website',
     },
@@ -20,7 +54,7 @@ const cardData = [
     imgSrc: `${Images.DebtCalc}`,
     title: 'Debt Calculator',
     badges: [react, css],
-    links: {
+    link: {
       live: 'https://chanceltron.github.io/debt-free-calc/',
       github: 'https://github.com/chanceltron/debt-free-calc',
     },
@@ -29,7 +63,7 @@ const cardData = [
     imgSrc: `${Images.Battleship}`,
     title: 'Battleship',
     badges: [javascript, node],
-    links: {
+    link: {
       live: 'https://github.com/chanceltron/node-battleship',
       github: 'https://github.com/chanceltron/node-battleship',
     },
@@ -38,7 +72,7 @@ const cardData = [
     imgSrc: `${Images.SaaS}`,
     title: 'SaaS Starter',
     badges: [html, css],
-    links: {
+    link: {
       live: 'https://chanceltron.github.io/SaaS-Website/',
       github: 'https://github.com/chanceltron/SaaS-Website',
     },
@@ -63,33 +97,47 @@ export function Projects() {
         <div
           key={index}
           className=' relative group transition-all max-w-sm hover:scale-110'>
-          <Card
-            imgSrc={card.imgSrc}
-            className='transition-all group-hover:opacity-20'>
-            <h5 className='text-2xl font-bold tracking-tight text-stone-800'>
-              {card.title}
-            </h5>
-            <p className='font-normal text-gray-700'></p>
-            <div className='flex flex-wrap gap-2'>
-              {card.badges.map((badge, index) => {
-                return (
-                  <Badge key={index} className={badge.styles}>
-                    {badge.label}
-                  </Badge>
-                );
-              })}
-            </div>
-          </Card>
-          <div className='absolute flex flex-col items-center gap-3 justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 transition-all invisible group-hover:visible'>
-            <a href='' target='_blank'>
-              <Button className='w-full' pill={true}>
-                View Live Site <HiArrowUpRight className='ml-2 text-2xl' />
-              </Button>
+          <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow transition-all group-hover:opacity-20'>
+            <a href='#'>
+              <img className='rounded-t-lg' src={card.imgSrc} alt='' />
             </a>
-            <a href='' target='_blank'>
-              <Button className='w-full' color='purple' pill={true}>
+            <div className='p-5'>
+              <a href='#'>
+                <h5 className='mb-2 text-2xl font-bold tracking-tight'>
+                  {card.title}
+                </h5>
+              </a>
+              <p className='mb-3 font-normal text-stone-700'>
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <div className='flex flex-wrap gap-2'>
+                {card.badges.map((badge, index) => {
+                  return (
+                    <span
+                      key={index}
+                      className={`${badge.styles} text-sm font-medium mr-2 px-2.5 py-0.5 rounded`}>
+                      {badge.label}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className='absolute flex flex-col items-center gap-3 justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 transition-all invisible group-hover:visible'>
+            <a href={card.link.live} target='_blank'>
+              <button
+                type='button'
+                className='mx-auto w-full flex justify-center items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2'>
+                View Live Site <HiArrowUpRight className='ml-2 text-2xl' />
+              </button>
+            </a>
+            <a href={card.link.github} target='_blank'>
+              <button
+                type='button'
+                className='mx-auto w-full flex justify-center items-center text-white bg-purple-700 hover:bg-purple-800 focus:ring-1 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 mb-2'>
                 View on GitHub <FaGithub className='ml-2 text-2xl' />
-              </Button>
+              </button>
             </a>
           </div>
         </div>

@@ -2,6 +2,7 @@
   {
     "id": "army",
     "name": "United States Army",
+    "title": "Information Technology Specialist",
     "startDate": "2013",
     "timeline": "2013 - 2017",
     "hook": "IT professional with US Army experience, skilled in high-pressure scenarios.",
@@ -11,6 +12,7 @@
   {
     "id": "rush",
     "name": "Rush Personnel Services",
+    "title": "System Administrator",
     "startDate": "2017",
     "timeline": "2017 - 2018",
     "hook": "Experienced system administrator skilled in network engineering and administration.",
@@ -20,6 +22,7 @@
   {
     "id": "prx",
     "name": "PioneerRx Pharmacy Software",
+    "title": "Hardware Support Technician - Teir II",
     "startDate": "2018",
     "timeline": "2018 - 2019",
     "hook": "Remote IT Hardware Specialist with expertise in troubleshooting and support.",
@@ -29,6 +32,7 @@
   {
     "id": "sla",
     "name": "Superior Livestock Auction",
+    "title": "Systems Administrator / Video Engineer",
     "startDate": "2019",
     "timeline": "2019 - Present",
     "hook": "Systems Administrator and Video Engineer with expertise in live auctions.",

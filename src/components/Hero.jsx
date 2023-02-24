@@ -24,15 +24,6 @@ export function Hero() {
           />
         </div>
       </div>
-      {/* <div className='flex justify-center items-center w-full py-6 bg-white'>
-        <Marquee speed='30' style={{ display: 'block' }}>
-          <div className='flex justify-around w-full'>
-            {Object.values(Icons).map((img, index) => (
-              <img key={index} className='w-28' src={img} />
-            ))}
-          </div>
-        </Marquee>
-      </div> */}
     </section>
   );
 }
