@@ -1,6 +1,7 @@
 import { Badge, Button, Card } from 'flowbite-react';
 import { Images } from '../assets/images';
 import { FaGithub } from 'react-icons/fa';
+import { HiArrowUpRight } from 'react-icons/hi2';
 import { Badges } from '../assets/images';
 const { html, css, javascript, typescript, react, node, tailwind, bootstrap } =
   Badges;
@@ -10,37 +11,54 @@ const cardData = [
     imgSrc: `${Images.Folio}`,
     title: 'folio',
     badges: [html, css, javascript],
-    link: 'https://github.com/chanceltron/folio-website',
+    links: {
+      live: 'https://chanceltron.github.io/folio-website/',
+      github: 'https://github.com/chanceltron/folio-website',
+    },
   },
   {
     imgSrc: `${Images.DebtCalc}`,
     title: 'Debt Calculator',
     badges: [react, css],
-    link: 'https://github.com/chanceltron/debt-free-calc',
+    links: {
+      live: 'https://chanceltron.github.io/debt-free-calc/',
+      github: 'https://github.com/chanceltron/debt-free-calc',
+    },
   },
   {
     imgSrc: `${Images.Battleship}`,
     title: 'Battleship',
     badges: [javascript, node],
-    link: 'https://github.com/chanceltron/node-battleship',
+    links: {
+      live: 'https://github.com/chanceltron/node-battleship',
+      github: 'https://github.com/chanceltron/node-battleship',
+    },
   },
   {
     imgSrc: `${Images.SaaS}`,
     title: 'SaaS Starter',
     badges: [html, css],
-    link: 'https://github.com/chanceltron/SaaS-Website',
+    links: {
+      live: 'https://chanceltron.github.io/SaaS-Website/',
+      github: 'https://github.com/chanceltron/SaaS-Website',
+    },
   },
   {
     imgSrc: `${Images.codeCommerce}`,
     title: 'codeCommerce',
     badges: [typescript, react, css],
-    link: 'https://github.com/chanceltron/code-commerce',
+    link: {
+      live: 'https://code-commerce.vercel.app/',
+      github: 'https://github.com/chanceltron/code-commerce',
+    },
   },
 ];
 
 export function Projects() {
   return (
-    <section id='projects' className='flex flex-wrap justify-center p-8 gap-6'>
+    <section
+      id='projects'
+      className='flex flex-wrap justify-center p-8 gap-6 bg-stone-200'>
       {cardData.map((card, index) => (
         <div
           key={index}
@@ -62,14 +80,18 @@ export function Projects() {
               })}
             </div>
           </Card>
-          <a href={card.link} target='_blank'>
-            <Button
-              className='absolute flex justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 transition-all invisible group-hover:visible'
-              color='purple'
-              pill={true}>
-              View on GitHub <FaGithub className='ml-2 text-2xl' />
-            </Button>
-          </a>
+          <div className='absolute flex flex-col items-center gap-3 justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 transition-all invisible group-hover:visible'>
+            <a href='' target='_blank'>
+              <Button className='w-full' pill={true}>
+                View Live Site <HiArrowUpRight className='ml-2 text-2xl' />
+              </Button>
+            </a>
+            <a href='' target='_blank'>
+              <Button className='w-full' color='purple' pill={true}>
+                View on GitHub <FaGithub className='ml-2 text-2xl' />
+              </Button>
+            </a>
+          </div>
         </div>
       ))}
     </section>

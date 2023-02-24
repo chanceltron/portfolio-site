@@ -9,17 +9,11 @@ import { Projects } from './components/Projects';
 export default function App() {
   return (
     <>
-      <div className='h-screen w-full'>
-        <AlertMessage />
-        <div className='bg-stone-200'>
-          <NavBar />
-          <Hero />
-        </div>
-        <MarqueeSection />
-      </div>
-      <div className='bg-stone-200'>
-        <Projects />
-      </div>
+      <AlertMessage />
+      <NavBar />
+      <Hero />
+      <MarqueeSection />
+      <Projects />
       <Experience />
       <JobModal />
     </>
