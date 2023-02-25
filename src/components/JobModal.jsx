@@ -5,9 +5,11 @@ export function JobModal({ openModal, onClose, job }) {
   return (
     <Modal dismissible={true} show={openModal} onClose={onClose} size='4xl'>
       <Modal.Header>
-        <p>{!job ? '' : job.name}</p>
-        <p className='text-stone-500 font-light italic ml-1'>
-          {!job ? '' : job.time}
+        <p className='text-3xl'>
+          {!job ? '' : `${job.name} | ${job.timeline}`}
+        </p>
+        <p className='text-xl font-normal text-gray-500'>
+          {!job ? '' : job.title}
         </p>
       </Modal.Header>
       <Modal.Body>
@@ -18,9 +20,12 @@ export function JobModal({ openModal, onClose, job }) {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button color='gray' onClick={onClose}>
+        <button
+          type='button'
+          onClick={onClose}
+          className='flex justify-center items-center text-stone-800 hover:text-blue-700 border border-gray-200 hover:bg-gray-100 focus:ring-1 focus:outline-none focus:ring-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'>
           Close
-        </Button>
+        </button>
       </Modal.Footer>
     </Modal>
   );

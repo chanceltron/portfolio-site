@@ -59,6 +59,7 @@ export function Experience() {
           </button>
         </li>
       ))}
+
       <JobModal
         openModal={openModal}
         onClose={handleCloseModal}
