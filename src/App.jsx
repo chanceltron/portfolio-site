@@ -5,18 +5,18 @@ import { NavBar } from './components/NavBar';
 import { AlertMessage } from './components/AlertMessage';
 import { Projects } from './components/Projects';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   return (
     <>
-      {/* <AlertMessage /> */}
       <NavBar />
       <Hero />
       <MarqueeSection />
       <Projects />
       <Experience />
-      {/* <JobModal /> */}
       <Footer />
+      <Analytics />
     </>
   );
 }
