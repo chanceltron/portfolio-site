@@ -38,7 +38,7 @@ const badges = {
     styles: 'bg-purple-500 text-white',
   },
 };
-const { html, css, javascript, typescript, react, node } = badges;
+const { html, css, javascript, typescript, react, node, tailwind } = badges;
 
 const cardData = [
   {
