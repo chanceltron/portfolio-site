@@ -30,11 +30,11 @@ const badges = {
     styles: 'bg-lime-400 text-stone-800',
   },
   tailwind: {
-    icon: 'tailwind',
+    label: 'tailwind',
     styles: 'bg-emerald-400 text-white',
   },
   bootstrap: {
-    icon: 'bootstrap',
+    label: 'bootstrap',
     styles: 'bg-purple-500 text-white',
   },
 };
