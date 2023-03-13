@@ -82,8 +82,8 @@ const cardData = [
     title: 'codeCommerce',
     badges: [typescript, react, css],
     link: {
-      live: 'https://code-commerce.vercel.app/',
-      github: 'https://github.com/chanceltron/code-commerce',
+      live: 'https://code-commerce-2.vercel.app/',
+      github: 'https://github.com/chanceltron/code-commerce-2',
     },
   },
 ];
